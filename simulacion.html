@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulación Solar Personalizada | ECOES</title>\
+      <link rel="icon" type="image/png" href="img/ECOESLOGO.ico">
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>ECOES<br><span>Simulador Solar para México</span></h1>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="#">Recomendaciones</a></li>
+        <li><a href="#">Contactanos</a></li>
+        <li><a href="simulacion.html" class="boton-simulador">Simulador</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="simulacion">
+      <h2>Simulación Solar Personalizada</h2>
+      <p>Ingresa la información solicitada para calcular la generación solar estimada de tu vivienda o negocio.</p>
+      
+      <form id="formSimulador">
+        <label for="region">Región:</label>
+        <select id="region" name="region" required>
+          <option value="">Selecciona tu región</option>
+          <option value="norte">Norte</option>
+          <option value="centro">Centro</option>
+          <option value="sur">Sur</option>
+        </select>
+
+        <label for="area">Área disponible (m²):</label>
+        <input type="number" id="area" name="area" min="1" placeholder="Ej. 20" required>
+
+        <label for="orientacion">Orientación del techo:</label>
+        <select id="orientacion" name="orientacion">
+          <option value="">Selecciona</option>
+          <option value="sur">Sur</option>
+          <option value="este">Este</option>
+          <option value="oeste">Oeste</option>
+          <option value="norte">Norte</option>
+        </select>
+
+        <button type="submit">Calcular</button>
+      </form>
+
+      <div id="resultados" style="margin-top:20px;"></div>
+    </section>
+    
+  </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ECOES. Formulacion de Proyectos Informaticos FEPI</p>
+    </footer>
+
+  <script src="js/simulacion.js"></script>
+</body>
+</html>

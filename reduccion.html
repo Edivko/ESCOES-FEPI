@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reducción de CO₂ | ECOES</title>
+      <link rel="icon" type="image/png" href="img/ECOESLOGO.ico">
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">
+
+        <h1>ECOES<br><span>Simulador Solar para México</span></h1>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="recomendaciones.html">Recomendaciones</a></li>
+        <li><a href="#">Contactanos</a></li>
+        <li><a href="simulacion.html" class="boton-simulador">Simulador</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="reduccion">
+      <h2>Reducción Estimada de Emisiones de CO₂</h2>
+      <p>Calcula cuánto CO₂ evitarías emitir gracias a tu instalación de paneles solares y contribuye al cuidado del planeta.</p>
+
+      <form id="formCO2">
+  <label for="generacionCO2">Generación mensual estimada (kWh):</label>
+<div style="display: flex; align-items: center; gap: 10px;">
+  <input type="number" id="generacionCO2" min="1" placeholder="Ej. 500" required>
+  <button type="button" id="btnIrSimulacion" style="padding: 5px 10px;">No sé mi generación</button>
+</div>
+
+        <button type="submit">Calcular reducción</button>
+      </form>
+
+      <div id="resultadoCO2" style="margin-top: 20px;"></div>
+    </section>
+  </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ECOES. Formulacion de Proyectos Informaticos FEPI</p>
+    </footer>
+
+  <script src="js/reduccion.js"></script>
+  <!-- Modal Simulación -->
+<div id="modalSimulacion" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="closeSimulacion">&times;</span>
+    <h3>¿No sabes tu generación?</h3>
+    <p>Para conocer la generación estimada de tu hogar o negocio, utiliza primero nuestro simulador solar personalizado.</p>
+    <a href="simulacion.html" class="boton-simulador" style="display: inline-block; margin-top: 10px;">Ir al simulador</a>
+  </div>
+</div>
+
+</body>
+</html>

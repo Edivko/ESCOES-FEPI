@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparativa de Regiones | ECOES</title>
+        <link rel="icon" type="image/png" href="img/ECOESLOGO.ico">
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>ECOES<br /><span>Simulador Solar para México</span></h1>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="recomendaciones.html">Recomendaciones</a></li>
+          <li><a href="#">Contactanos</a></li>
+          <li>
+            <a href="simulacion.html" class="boton-simulador">Simulador</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section class="comparativa">
+        <h2>Comparativa de Generación Solar por Región</h2>
+        <p>
+          Conoce el potencial solar de cada zona de México y toma decisiones
+          informadas para la instalación de paneles solares.
+        </p>
+
+        <!-- Gráfica -->
+        <canvas id="graficaRegiones" width="400" height="300"></canvas>
+
+        <!-- Información adicional -->
+        <div class="info-regiones">
+          <h3>Ventajas y desventajas por región</h3>
+
+          <div class="region-card">
+            <h4>Norte</h4>
+            <p>
+              Alta radiación solar (~180 kWh/m²/mes).<br />
+              <strong>Ventaja:</strong> mayor generación anual.<br />
+              <strong>Desventaja:</strong> temperaturas extremas que pueden
+              reducir eficiencia en verano.
+            </p>
+          </div>
+
+          <div class="region-card">
+            <h4>Centro</h4>
+            <p>
+              Radiación media (~150 kWh/m²/mes).<br />
+              <strong>Ventaja:</strong> clima templado estable.<br />
+              <strong>Desventaja:</strong> menor generación comparado con el
+              norte.
+            </p>
+          </div>
+
+          <div class="region-card">
+            <h4>Sur</h4>
+            <p>
+              Radiación moderada (~130 kWh/m²/mes).<br />
+              <strong>Ventaja:</strong> clima cálido con menos variaciones
+              estacionales.<br />
+              <strong>Desventaja:</strong> alta humedad puede requerir limpieza
+              más frecuente.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ECOES. Formulacion de Proyectos Informaticos FEPI</p>
+    </footer>
+
+    <script src="js/comparativa.js"></script>
+  </body>
+</html>
