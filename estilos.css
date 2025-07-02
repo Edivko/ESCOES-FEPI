@@ -556,3 +556,76 @@ body {
   z-index: 1;
   max-width: 600px;
 }
+
+
+/* Responsive para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .inicio {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .texto-inicio h2 {
+    font-size: 1.5em;
+  }
+
+  .imagen-inicio img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .grid-servicios {
+    grid-template-columns: 1fr;
+  }
+
+  .simulacion form,
+  .ahorro form,
+  .reduccion form {
+    grid-template-columns: 1fr;
+  }
+
+  .simulacion button,
+  .ahorro button,
+  .reduccion button {
+    grid-column: span 1;
+  }
+
+  nav .logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .logo h1 {
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+
+}
